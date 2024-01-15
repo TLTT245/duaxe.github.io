@@ -1,0 +1,98 @@
+#circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 100px;
+    background-color: red;
+    border: 1px solid #000; /* Viền đậm màu đen */
+    margin: 5px;
+  }
+  #circle1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 10px;
+    background-color: yellow;
+    border: 1px solid #000; /* Viền đậm màu đen */
+    margin: 4px;
+  }
+  #circle2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 10px;
+    background-color: green;
+    border: 1px solid #000; /* Viền đậm màu đen */
+    margin: 5px;
+  }  
+.traffic{
+    display: flex;
+}
+.fill{
+    background-color: green;
+    width: 100px;
+    height: 10px;
+}
+.road {
+  position: relative;
+  background-color: #d2d2d2;
+  height: 400px;
+  width: 100%;
+  background-image: url('/public/images/street.jpg'); /* Đảm bảo đường dẫn đến ảnh chính xác */
+  background-size: cover; /* Ảnh nền sẽ phủ kín và không bị méo */
+  background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+  background-position: center; /* Căn chỉnh ảnh nền ở giữa */
+}
+
+.car, .car1, .car2 {
+  position: absolute;
+  z-index: 2; /* Đặt z-index cao hơn cho các xe để chúng nằm trên đường */
+}
+
+.car1 {
+  left: 1%;
+  width: 300px;
+  top: 10%;
+}
+
+.car2 {
+  left: 1%;
+  width: 300px;
+  bottom: 10%;
+}
+/* setimeout */
+.finish-line {
+  position: absolute;
+  height: 100%;
+  width: 10px; /* Độ rộng của vạch đích */
+  background-color: yellow; /* Màu sắc của vạch đích */
+  right: 10%;
+}
+
+
+/* Định nghĩa kiểu cho đèn giao thông */
+.traffic-light {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.light {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: black;
+}
+
+/* Kiểu cho nút start */
+#startButton {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+}
